@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Peep</title>
+</head>
+<body>
+	<div class="message-container"></div>
+	Hello Amith
+	<div>
+		<a onclick="configModal()" class="pull-right">Configure</a>
+	</div>
+
+
+	<div id="configModal" style="display: none;">
+		<div>
+			<label for="workspace">Workspace: </label> <input type="text" id="workspace" size="50"> <input id="configure" type="button" value="Configure" onclick="configure()">
+		</div>
+	</div>
+	
+	<div id="dirStructure"></div>
+
+	<hr class="footer">
+	<div>
+		<span class="footer" id="currentFolder"></span>
+	</div>
+</body>
+<script src="js/framework/sessionStorage.js"></script>
+<script src="js/external/jquery-1.11.1.min.js"></script>
+<script src="js/framework/util.js"></script>
+<script src="js/framework/modal.js"></script>
+<script src="js/framework/userMessages.js"></script>
+<script src="js/framework/createDOM.js"></script>
+<script src="js/framework/html5SPN.js"></script>
+<script src="js/external/nprogress.js"></script>
+<script src="home.js"></script>
+<link href="css/base.css" rel="stylesheet">
+<link href="css/modal.css" rel="stylesheet">
+<link href="css/userMessages.css" rel="stylesheet">
+</html>
